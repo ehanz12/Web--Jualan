@@ -1,0 +1,72 @@
+body {
+    font-family:'Lato', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    background-color: black;
+    color: white;
+    padding: 10px 50px;
+}
+
+.navtop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pencarian {
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.pencarianinput {
+    border: none;
+    background-color: transparent;
+}
+
+.pencarianinput::placeholder {
+    color: lightgray;
+}
+
+.limitedoffer {
+    font-size: 20px;
+    border-bottom: 2px solid aqua;
+    cursor: pointer;
+}
+
+.navbottom {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.menuitem {
+ margin-right: 50px;
+ color: lightgrey;
+ cursor: pointer;
+ font-weight: 400;
+}
+
+.contact{
+    padding: 10px 28px;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3 ease;
+    flex-wrap: wrap;
+}
+.contact:hover{
+    background-color: aqua;
+    box-shadow: aqua;
+    color: white;
+
+}
