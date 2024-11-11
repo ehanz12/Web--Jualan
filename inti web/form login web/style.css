@@ -8,8 +8,8 @@
 }
 
 body{
-    background-color: #00ff77;
-    background: linear-gradient(to right, #e2e2e2, #00ff77);
+    background-color: #ffffff;
+    background: linear-gradient(to right, #e2e2e2, #ffffff);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,6 +63,12 @@ body{
 .container button.hidden{
     background-color: transparent;
     border-color: #fff;
+    transition: .3s all;
+}
+
+.container button.hidden:hover{
+    background-color: #AD49E1;
+    border-color: #fff;
 }
 
 .container form{
@@ -93,10 +99,19 @@ body{
     transition: all 0.6s ease-in-out;
 }
 
+.form-container > form > h1{
+    margin-bottom: 20px;
+}
+
+.form-container > form > button{
+    margin-bottom: 20px;
+}
+
 .sign-in{
     left: 0;
     width: 50%;
     z-index: 2;
+    margin-bottom: 10px;
 }
 
 .container.active .sign-in{
@@ -130,6 +145,7 @@ body{
 
 .social-icons{
     margin: 20px 0;
+    height: 100px;
 }
 
 .social-icons a{
@@ -141,6 +157,11 @@ body{
     margin: 0 3px;
     width: 40px;
     height: 40px;
+}
+
+.social-icons > .icon > i{
+    width: 200px;
+    height: 80px;
 }
 
 .toggle-container{
@@ -208,3 +229,4 @@ body{
 .container.active .toggle-right{
     transform: translateX(200%);
 }
+

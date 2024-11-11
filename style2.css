@@ -1,0 +1,106 @@
+
+*,html,body {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+
+button {
+    border: 0;
+    outline: none;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+.navbar {
+    height: 50px;
+    background-color: hsla(0, 0%, 0%, 0.841);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo i {
+    color: #0aa5ff;
+    font-size: 22px;
+}
+
+.navabr .logo a {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    margin-left: 12px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.navbar > .logo > .menu-home {
+    font-size: 25px;
+    color: #999;
+    text-decoration: none;
+    padding-left: 25px;
+}
+
+.menu-links {
+    display: flex;
+    gap: 24px;
+    border-right: 1px solid #999;
+    padding-inline: 24px;
+}
+
+.menu-links a {
+    font-weight: 500;
+    color: #999;
+    padding: 8px 16px;
+}
+
+.menu-links a:hover {
+    color: white;
+}
+
+.log-in{
+    font-weight: 500;
+    padding: 12px 22px;
+    background-color: transparent;
+    color: #999;
+    border-radius: 10px;
+    border: 2px solid #0aa5ff;
+    transition: 0.2s;
+}
+
+.log-in > a{
+    color: #999;
+}
+
+.log-in:hover {
+    background-color: #0aa5ff;
+    color: white;
+}
+
+.log-in a:hover{
+    color: white;
+}
+
+.menu-btn {
+    font-size: 32px;
+    color: white;
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 53rem) {
+    .menu {
+        display: none;
+    }
+    .menu-btn {
+        display: block;
+    }
+}
