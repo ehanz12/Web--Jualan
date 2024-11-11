@@ -1,7 +1,12 @@
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: ease;
   }
-  
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
   body {
     font-family: "Lato", sans-serif;
     padding: 0;
@@ -27,6 +32,7 @@ html {
     background-color: gray;
     padding: 10px 20px;
     border-radius: 10px;
+    margin-bottom: 20px;
   }
   
   .searchInput {
@@ -83,6 +89,7 @@ html {
     height: 750px;
     border-radius: 50%;
     position: absolute;
+    transition: 150ms ease-out; /* Adding transition */
   }
   
   .sliderImg {
@@ -212,9 +219,14 @@ html {
   }
 
   
-.sliderImg{
+  .sliderImg {
     transition: 150ms ease-out;
 }
-.sliderImg:hover{
+
+.sliderImg:hover {
     scale: 1.1;
+}
+
+.sliderImg:hover + .sliderBg {
+    scale: 1.1; /* Apply scale on hover of .sliderImg */
 }
